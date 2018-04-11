@@ -1,0 +1,40 @@
+.header {
+  height: 96vh;
+  background-image: linear-gradient(
+      145deg,
+      rgba($color-primary-light, 0.8) 0%,
+      rgba($color-primary-dark, 0.8) 100%
+    ),
+    url(../img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  position: relative;
+  &__logo {
+    width: 100%;
+    &-box {
+      width: 6rem;
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+    }
+  }
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    &--main {
+      display: block;
+      animation: moveInleft 1s ease-out;
+    }
+    &--sub {
+      display: block;
+      animation: moveInright 1s ease-in;
+      margin-bottom: 6rem;
+    }
+  }
+}

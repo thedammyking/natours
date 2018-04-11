@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn remove node-sass
+
+PATH: 
+  /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/thedammyking/.local/bin:/home/thedammyking/bin:/usr/local/java/jdk1.8.0_161/bin:/home/thedammyking/Android/Sdk/tools:/home/thedammyking/Android/Sdk/platform-tools:/home/thedammyking/.config/composer/vendor/bin:/home/thedammyking/.local/bin:/home/thedammyking/bin:/usr/local/java/jdk1.8.0_161/bin:/home/thedammyking/Android/Sdk/tools:/home/thedammyking/Android/Sdk/platform-tools:/home/thedammyking/.local/bin:/home/thedammyking/bin:/usr/local/java/jdk1.8.0_161/bin:/home/thedammyking/Android/Sdk/tools:/home/thedammyking/Android/Sdk/platform-tools:/home/thedammyking/.config/composer/vendor/bin:/home/thedammyking/.local/bin:/home/thedammyking/bin:/usr/local/java/jdk1.8.0_161/bin:/home/thedammyking/Android/Sdk/tools:/home/thedammyking/Android/Sdk/platform-tools:/home/thedammyking/.config/composer/vendor/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+      "name": "natours",
+      "version": "1.0.0",
+      "description": "Landing page for Natours",
+      "main": "index.js",
+      "scripts": {
+          "serve": "live-server",
+          "sass": "node-sass sass/main.scss css/style.css -w",
+          "start": "parallelshell \"npm run sass && npm run sass -- -w\" \"npm run serve\""
+      },
+      "author": "Oluwadamilola Babalola",
+      "license": "ISC",
+      "dependencies": {
+          "node-sass": "^4.8.3"
+      },
+      "devDependencies": {
+          "parallelshell": "^3.0.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: No lockfile in this directory. Run `yarn install` to generate one.
+      at new MessageError (/usr/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /usr/lib/node_modules/yarn/lib/cli.js:89389:13
+      at <anonymous>
