@@ -1,6 +1,5 @@
 .btn {
-  text-transform: uppercase;
-  font-size: 1.5rem;
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -8,14 +7,23 @@
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    position: relative;
+
+    //change for <button> element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
+  &:focus,
   &:active {
     transform: translate(-0.1rem, -0.2rem);
     box-shadow: 0 0.5rem 0.7rem rgba($color-black, 0.2);
+    outline: none;
   }
   &--white {
     background-color: $color-white;
