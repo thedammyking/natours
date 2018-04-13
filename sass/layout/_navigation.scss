@@ -113,10 +113,6 @@
       display: inline-block;
     }
 
-    &::before {
-      height: 3px;
-    }
-
     &::before,
     &::after {
       content: "";

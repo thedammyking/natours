@@ -502,7 +502,7 @@ body {
   .header__logo {
     width: 100%; }
     .header__logo-box {
-      width: 6rem;
+      width: 8rem;
       position: absolute;
       top: 4rem;
       left: 4rem; }
@@ -604,8 +604,6 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block; }
-  .navigation__icon::before {
-    height: 3px; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
